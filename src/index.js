@@ -20,6 +20,12 @@ client.on("messageCreate", (message) => {
     if (message.author.bot) {
       return;
     }
+
+    if (message.content == `<@${process.env.CLIENT_ID}>`) {
+      let replies = ["Hello!","Hi","What's Up?","*Beep-Boop*"]
+      
+      message.reply(replies[Math.floor(Math.random() * 4)])
+    }
 });
 
 // interactionCreate Event
