@@ -1,0 +1,11 @@
+{
+  "name": "penguinbyte-guard",
+  "version": "0.0.1",
+  "description": "A bot for keeping PenguinByte Discord server safe.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --env-file=.env src/index.js"
+  },
+  "author": "lexerotk",
+  "license": "ISC"
+}

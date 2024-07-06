@@ -1,0 +1,5 @@
+node_modules/
+database/
+.env
+package-lock.json
+run.bat
