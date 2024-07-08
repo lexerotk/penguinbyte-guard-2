@@ -1,10 +1,7 @@
 const { REST, Routes, ApplicationCommandOptionType } = require("discord.js");
 
 const commands = [
-  {
-    name: "test",
-    description: "This is just a test command."
-  }
+  
 ];
 
 const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
@@ -20,6 +17,7 @@ const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
       ),
       { body: commands }
     );
+    
 
     console.log("Slash commands has been registered.");
   } catch (error) {

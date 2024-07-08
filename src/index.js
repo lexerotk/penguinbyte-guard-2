@@ -34,7 +34,12 @@ client.on("interactionCreate", (interection) => {
     if (!interection.isChatInputCommand()) return;
       
       if (interection.commandName == 'test') {
-          interection.reply(`Hi. This is a interaction command test. If you see this, bot and this command works normal.`)
+          interection.reply(`Hi. This is a interaction command test. If you see this, the bot is working normally.`)
+      }
+
+      if (interection.commandName == 'servers') {
+        client.guilds.cache.fetch()
+        interection.reply(`I'm currently in ${client.guilds.cache.size} servers.`)
       }
 });
   
