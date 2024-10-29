@@ -1,4 +1,6 @@
-# PenguinByte Guard 
+# PenguinByte Guard (Discord.js Version)
+
+***Discontinued due switching to Discord.py in the future***
 
 A bot for keeping the [PenguinByte Discord Community](https://discord.gg/V4JQtnQksw) safer.
 
